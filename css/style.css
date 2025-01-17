@@ -1,0 +1,242 @@
+
+.navbar-item{
+    color: #D2D4C8;
+}
+
+.hero {
+    background-color: #1A181B;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-head {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+
+/* Content Section */
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+}
+
+.hero-content h2 {
+    font-size: 2rem;
+    color: #B8BDB5;
+}
+
+.hero-content p {
+    font-size: 1.25rem;
+    color: #D2D4C8;
+}
+
+/* Hidden Sections */
+.section-content {
+    display: none;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.section-content.active {
+    display: block;
+    padding-top: 1em;
+    opacity: 1;
+}
+
+/* Navbar Hover Effects */
+.navbar-item:hover {
+    background-color:#FFEDE1;; /* Bulma primary color */
+    color: #AFCBFF;
+}
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+    color: #fff; /* Set desired text color */
+}
+
+
+/* Top Navbar (Always Fixed) */
+.top-navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Bottom Sticky Navbar */
+.bottom-navbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-around;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+.bottom-navbar a:hover {
+    background-color: #f0f0f0;
+}
+
+.bottom-navbar i {
+    display: block;
+    font-size: 18px;
+}
+
+/* Avoid overlap with bottom navbar */
+body {
+    padding-bottom: 60px; /* Adjust based on bottom navbar height */
+    padding-top: 60px; /* Adjust based on top navbar height */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .top-navbar {
+        font-size: 1.25rem;
+    }
+
+    .bottom-navbar {
+        font-size: 12px;
+    }
+}
+
+.box{
+    height: fit-content;
+    width: fit-content;
+}
+  
+  h2 {
+    font-size: 1.5em;
+  }
+  
+
+  
+  a:hover {
+    text-decoration: none;
+  }
+
+/* Ensure square cards that resize responsively */
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    aspect-ratio: 1; /* Ensures cards are squares */
+    width: 100%; /* Cards take the full width of their column */
+    max-width: 100%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+
+  
+  
+  /* Responsive tweaks for smaller screens */
+  @media screen and (max-width: 768px) {
+    .title.is-4 {
+      font-size: 1.2rem;
+    }
+  
+    .content {
+      font-size: 0.9rem;
+    }
+  }
+
+/* General Container Adjustments */
+.section-content {
+    padding: 20px;
+    max-width: 90%; /* Reduce width on smaller screens */
+    margin: 0 auto;
+    text-align: center; /* Center all content */
+}
+
+/* Center Image Over Text */
+.media {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center image and text */
+}
+
+.media-left {
+    margin-bottom: 20px; /* Add spacing between the image and text */
+}
+
+.media-left img {
+    width: 128px; /* Adjust image size */
+    height: 128px;
+    border-radius: 50%; /* Keep the image rounded */
+}
+
+/* Adjust Text Below Image */
+.media-content {
+    text-align: center; /* Center-align the text */
+}
+
+/* Skills Section - Center Tags */
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+
+.tag {
+    font-size: 0.85rem; /* Adjust font size */
+    padding: 5px 10px;
+}
+
+/* Button Adjustments */
+.buttons.is-centered a {
+    width: 100%; /* Full-width buttons on mobile */
+    margin-bottom: 10px; /* Add spacing between buttons */
+}
+
+@media screen and (min-width: 768px) {
+    /* On larger screens, adjust the layout */
+    .media {
+        flex-direction: row; /* Return to side-by-side layout */
+        align-items: flex-start;
+    }
+
+    .media-left {
+        margin-bottom: 0;
+    }
+
+    .media-content {
+        text-align: left;
+    }
+
+    .buttons.is-centered a {
+        width: auto; /* Reset button width */
+        margin: 0 10px;
+    }
+
+    .skills-container {
+        justify-content: flex-start;
+    }
+}
+
+
+  
+  :hover{
+    cursor: pointer;
+  }

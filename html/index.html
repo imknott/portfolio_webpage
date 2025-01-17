@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ian Knott: Passionate Software Engineer</title>
+    <link href="https://cdn.jsdelivr.net/npm/bulma@1.0.3/css/bulma.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="/css/style.css" rel="stylesheet">
+    <link href="/css/colorchange.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <section class="hero is-fullheight">
+        <div class="hero-head">
+            <!-- Fixed Top Navbar with Name/Logo -->
+            <header class="navbar top-navbar">
+                <div class="container">
+                    <h1 class="has-text-primary">Ian Knott</h1>
+                </div>
+            </header>
+
+            <!-- Bottom Sticky Navbar -->
+            <div class="bottom-navbar has-background-dark">
+                <a class="navbar-item" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span>About</span>
+                </a>
+                <a class="navbar-item" data-section="projects">
+                    <i class="fas fa-project-diagram"></i>
+                    <span>Projects</span>
+                </a>
+            </div>
+
+        </div>
+
+        <!-- Hero Content -->
+        <div class="hero-content">
+            <!-- Default Content -->
+            <div id="default" class="section-content active">
+                <h2 id="intro"></h2>
+                <p id="intro2"></p>
+            </div>
+            <!-- About Section -->
+            <div id="about" class="section-content">
+                <div class="content box has-shadow">
+                    <div class="media">
+                        <div class="media-left">
+                            <figure class="image is-128x128">
+                                <img src="/images/1712926917356.jpeg" alt="Profile Picture" class="is-rounded">
+                            </figure>
+                        </div>
+                        <div class="media-content">
+                            <h1 class="title is-4 has-text-primary">Ian Knott</h1>
+                            <h2 class="subtitle is-6 has-text-grey">Software Engineer | B.S. in Computer Science</h2>
+                            <p>
+                                I am a motivated software engineer passionate about designing, implementing,
+                                and scaling applications that enhance user experiences, solve real-world problems,
+                                and entertain. My expertise spans back-end development, game design, and database
+                                management.
+                                I thrive in collaborative team environments and continuously seek opportunities to learn
+                                and contribute to impactful projects.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Skills Summary -->
+                <div class="content has-text-centered">
+                    <h2 class="title is-5 has-text-primary">Skills & Tools</h2>
+                    <p>
+                        <span class="tag is-info is-light">Node.js</span>
+                        <span class="tag is-info is-light">Unity</span>
+                        <span class="tag is-info is-light">Java</span>
+                        <span class="tag is-info is-light">MySQL</span>
+                        <span class="tag is-info is-light">Amazon RDS</span>
+                        <span class="tag is-info is-light">Firebase</span>
+                        <span class="tag is-info is-light">Linux</span>
+                        <span class="tag is-info is-light">AWS EC2</span>
+                        <span class="tag is-info is-light">Git</span>
+                        <span class="tag is-info is-light">C++</span>
+                        <span class="tag is-info is-light">C#</span>
+                    </p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="content has-text-centered pb-5">
+                    <h2 class="title is-5 has-text-primary">Contact Information</h2>
+                    <div class="buttons is-centered">
+                        <a href="mailto:ianmatknott@gmail.com" target="_blank" class="button is-rounded is-info pb-2">
+                            <span class="icon">
+                                <i class="fas fa-envelope"></i>
+                            </span>
+                            <span>Email</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/ianmknott" target="_blank"
+                            class="button is-rounded is-link pb-2">
+                            <span class="icon">
+                                <i class="fab fa-linkedin"></i>
+                            </span>
+                            <span>LinkedIn</span>
+                        </a>
+                        <a href="https://github.com/imknott" target="_blank" class="button is-rounded is-dark pb-2">
+                            <span class="icon">
+                                <i class="fab fa-github"></i>
+                            </span>
+                            <span>GitHub</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Section -->
+            <div id="projects" class="section-content">
+                <h1 class="title">Portfolio</h1>
+                <div class="columns is-multiline is-centered projects-grid">
+                    <!-- Card 1 -->
+                    <div class="column is-one-third">
+                        <div class="card c">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/images/voterGuide.png" alt="Project 1" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="title is-5">VoterGuide</p>
+                                    <p class="has-text-centered is-size-7">As Lead Backend Engineer, I designed database
+                                        connections, built live communication
+                                        features, deployed the app using AWS EC2, and developed a semantic search
+                                        engine.
+                                    </p>
+                                    <a
+                                        href="https://github.com/imknott/voterguideapp">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="column is-one-third">
+                        <div class="card c">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/images/soulsvania.png" alt="Project 2" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="title is-5">2D Platformer</p>
+                                    <p class="has-text-centered is-size-7">Designed and developed a 2D platformer game
+                                        featuring smooth mechanics, engaging
+                                        levels, and challenging gameplay. This was all done in base java library where
+                                        all functionality was created by me.</p>
+                                    <a href="https://github.com/imknott/2dJavaGame">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="column is-one-third">
+                        <div class="card c">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/images/jdbc.png" alt="Project 3" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+
+
+
+                                <div class="content">
+                                    <p class="title is-5">JDBC/Sql</p>
+                                    <p class="has-text-centered is-size-7">Developed a Java program with programmatic
+                                        database access via JDBC
+                                        for seamless database integration. Designed ERD, EERD, and created DB in mySQL
+                                        workbench.
+                                    </p>
+                                    <a
+                                        href="https://github.com/imknott/javaDB">GitHub</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="column is-one-third">
+                        <div class="card c">
+                            <div class="card-image">
+                                <figure class="image">
+                                    <img src="/images/eporiaSoftware.png" alt="Project 4" />
+                                </figure>
+                            </div>
+                            <div class="card-content">
+                                <div class="content">
+                                    <p class="title is-5">Eporia</p>
+                                    <p class="has-text-centered is-size-7">Built and deployed a dynamic landing page for
+                                        a startup using modern web development
+                                        practices.</p>
+                                    <a href="https://eporiasoftware.firebaseapp.com">Website</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <script src="/js/index.js"></script>
+    <script src="/js/typingEffect.js"></script>
+</body>
+
+</html>
